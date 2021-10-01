@@ -1,0 +1,2294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/classic2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+      <!--card text mostly used-->
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          app:cardBackgroundColor="@color/classic3"
+          app:cardCornerRadius="20dp">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Mostly Used apps"
+              android:textColor="@color/classic"
+              android:textStyle="bold"
+              android:textSize="30dp"
+              android:textAlignment="center"/>
+
+
+      </androidx.cardview.widget.CardView>
+
+      <!--  mostly used grid-->
+        <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="350dp"
+           android:rowCount="3"
+           android:columnCount="3"
+           android:layout_margin="15dp">
+
+           <!-- row 1 column1 -->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/flipkartmostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/flipartlogo"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Flipkart"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+           <!--        row 1 column 2-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/amazonmostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/amazon"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Amazon"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+           <!--        row 1 column 3-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/instagrammostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/instagramlogo"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Instagram"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+           <!--        row 2 column 1-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/primemostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/amazonprime"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Prime"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+           <!--        row 2 column 2-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/zomatomostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/zomatologo"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Zomato"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+
+           <!--        row 2 column 3 -->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/paytmmostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/paytmlogo"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Paytm"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+           <!--        row 3 column 1-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/toimostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/timesofindialogo"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="TOI"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+           <!--        row 3 column  2-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cricbuzzmostlycard"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="20dp">
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="85dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/cricbuzzlogo"
+                   android:paddingTop="10dp"/>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Cricbuzz"
+                   android:textColor="@android:color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="bottom|center_horizontal"/>
+
+           </androidx.cardview.widget.CardView>
+
+
+       </GridLayout>
+
+
+
+
+        <!--card text  shopping-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Shopping"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  shopping grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/amazoncard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="81dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="22dp"
+                    android:src="@drawable/amazon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amazon"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flipkartcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/flipartlogo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flipkart"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myntracard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/myntralogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Myntra"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paytmmallcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/paytmmallfinal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paytm"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ajiocard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="71dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ajiologo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajio"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--        row 2 column 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ebaycard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ebaylogo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ebay"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 3 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nykaacard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="83dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/nykaalogo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nykaa"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 3 column  2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/snapdealcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/snapdealfinal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snapdeal"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+
+
+
+        <!--card text social-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Social"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  social grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/instagramcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="82dp"
+                    android:layout_height="69dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/instagramlogo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/twittercard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/twitterlogo1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/facebookcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/facebooklogo1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/youtubecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="77dp"
+                    android:layout_height="71dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="0dp"
+                    android:src="@drawable/youtbfinal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Youtube"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/quoracard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/quarasecond" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quora"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--        row 2 column 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linkdincard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/linkdinlogo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linkdin"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 3 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pinterestcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pintrestlogofinal"
+                    android:paddingBottom="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pinterest"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+        <!--card text entertainment-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="entertainment"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  entertainment grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/primecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/amazonprime"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prime"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/spotifycard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/spotifylogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spotify"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hotstarcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/disnyhotstarlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotstar"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gaanacard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ganalogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaana"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sonylivcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/sonylivlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sony Liv"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--        row 2 column 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/zee5card"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/zeelogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zee5"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 3 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/netflixcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/netflixlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Netflix"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+
+
+        <!--food text-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Food"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  food grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/swiggycard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/swiggylogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swiggy"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/zomatocard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/zomatologo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zomato"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kfccard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/kfclogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KFC"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/burgerkingcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/burgerkinglogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burger King"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dominoscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/dominoslogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domino's"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--        row 2 column 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mcdonaldscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mcdonaldslogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="McDonald's"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 3 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pizzahutcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pizzahutlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PizzaHut"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+        <!--recharge text-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Recharge"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  recharge grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paytmrechargecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/paytmlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paytm"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/freechargecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/freechargelogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freecharge"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jiocard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/jiologo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jio"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/airtelcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/airtellogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Airtel"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bsnlcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/bsnlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BSNL"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+
+        <!--news text-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="News"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  news grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ndtvcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ndtvlogo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NDTV news"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aajtakcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/aajtaklogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aajtak"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/zeenewscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/zeenewslogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zee news"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/toicard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/timesofindialogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOI"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tv9card"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tvninelogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV9"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+
+        <!--sports text -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sports"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  sports grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crickbuzzcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/cricbuzzlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crickbuzz"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fifacard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/fifalogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIFA"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/footballcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/footballlogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FootBall"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tenniscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tennislogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tennis"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+        <!--utility text-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/classic3"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Utility"
+                android:textColor="@color/classic"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <!--  utility grid-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_margin="15dp">
+
+            <!-- row 1 column1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mapscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mapslogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maps"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/translatecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/translatelogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Translate"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 1 column 3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medimgcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/onemglogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1mg"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        row 2 column 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oyocard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/oyologo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="oyo"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        row 2 column 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dictionarycard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/dictionarylogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dictionary"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--        row 2 column 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aboutuscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/aboutuslogo"
+                    android:paddingTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+</ScrollView>
