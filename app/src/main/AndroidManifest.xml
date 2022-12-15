@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:name="androidx.multidex.MultiDexApplication"
-        android:theme="@style/Theme.Apify">
+        android:theme="@style/Theme.Apify"
+        android:exported="true" >
+
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        ca-app-pub-3619478242051618/9642094951
         <activity
             android:name=".welcomeactivity"
             android:exported="true" >
